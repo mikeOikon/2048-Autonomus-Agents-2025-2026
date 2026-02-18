@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 AI Agent - Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="title-box">
+                <h1>2048 AI</h1>
+            </div>
+            <div class="subtitle-box">
+                <p>Αυτόνομοι Πράκτορες & Λήψη Αποφάσεων</p>
+                <p class="student-name">Οικονόμου Μιχαήλ | ΑΜ: 2023030017</p>
+            </div>
+        </header>
+
+        <!-- Intro -->
+        <section class="intro">
+            <p>Μια μελέτη πάνω στην Τεχνητή Νοημοσύνη, συγκρίνοντας αλγορίθμους Αναζήτησης (Expectimax) και Ενισχυτικής Μάθησης (Deep Q-Learning) στο περιβάλλον του 2048.</p>
+        </section>
+
+        <!-- Downloads Section -->
+        <section class="downloads-container">
+            <h2>Παραδοτέα</h2>
+            <div class="buttons-grid">
+                <a href="files/report.pdf" target="_blank" class="btn tile-2048">
+                    <span>📄</span> Αναφορά (PDF)
+                </a>
+                <a href="files/presentation.pptx" class="btn tile-1024">
+                    <span>📊</span> Παρουσίαση (PPT)
+                </a>
+                <a href="https://github.com/YOUR_USERNAME/2048-ai" target="_blank" class="btn tile-512">
+                    <span>💻</span> Κώδικας (GitHub)
+                </a>
+            </div>
+        </section>
+
+        <!-- The Agents -->
+        <section class="agents-section">
+            <h2>Οι Πράκτορες</h2>
+            <div class="grid-container">
+                
+                <div class="tile-card tile-2">
+                    <div class="tile-header">Random</div>
+                    <div class="tile-body">
+                        Ο βασικός πράκτορας. Παίζει τυχαία για να ορίσει το σημείο αναφοράς (Baseline).
+                    </div>
+                </div>
+
+                <div class="tile-card tile-16">
+                    <div class="tile-header">Greedy</div>
+                    <div class="tile-body">
+                        Χρησιμοποιεί ευριστικές μεθόδους (Snake Strategy) αλλά κοιτάει μόνο 1 βήμα μπροστά.
+                    </div>
+                </div>
+
+                <div class="tile-card tile-128">
+                    <div class="tile-header">DQN (AI)</div>
+                    <div class="tile-body">
+                        Model-Free Reinforcement Learning. Έμαθε να παίζει από το μηδέν μέσω χιλιάδων παρτίδων.
+                    </div>
+                </div>
+
+                <div class="tile-card tile-2048">
+                    <div class="tile-header">Expectimax</div>
+                    <div class="tile-body">
+                        Ο βέλτιστος αλγόριθμος. Υπολογίζει πιθανότητες και βάθος 3 κινήσεων. Φτάνει στο 2048.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>Created for the Course: Autonomous Agents 2025</p>
+        </footer>
+    </div>
+
+</body>
+</html>
